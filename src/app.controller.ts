@@ -14,7 +14,13 @@ export class AppController {
 
   @Get('health')
   @HttpCode(HttpStatus.OK)
-  getHeatchcheck(): string {
+  getHealthcheck(): string {
     return 'ALL IS GOOD :D';
+  }
+
+  @Get('dummy')
+  @HttpCode(HttpStatus.OK)
+  getDummy(): string {
+    return 'A dummy response';
   }
 }
